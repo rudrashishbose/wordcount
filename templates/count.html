@@ -1,0 +1,9 @@
+<h1>count<h1>
+
+<h3>There are {{ fulltext_len }} words in your text</h3>
+
+<h2>Word count<h2>
+</br>
+{% for word,counttotal in sorteddictionary%}
+<h3><span style="color: #13E513;">{{word}}</span> has occured {{counttotal}} times</h3>
+{% endfor %}
